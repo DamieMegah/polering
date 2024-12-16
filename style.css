@@ -1,0 +1,803 @@
+@import url('http://fonts.cdnfonts.com/css/magic-brush');
+
+:root{
+    --primary:rgba(147, 214, 211, 0.767);
+    --white:#fff;
+    --black:#000;
+    --shadow: 0.5rem 0.6rem 0.4rem rgba(15, 15, 15, 0.1);
+
+}
+
+*{
+   transition: all .3s linear;
+   
+}
+
+html{
+    font-size: 60%;
+    overflow: hidden;
+}
+
+body{
+    color: var(--black);
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.3rem  3rem;
+    width: 99.8%;
+    height: 8rem;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    z-index: 100;
+}
+
+.navbar .info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: .2rem 8rem;
+    font-size: 1rem;
+}
+
+
+.navbar .info .p2{
+    color: green;
+    background:var(--white);
+    font-weight: bolder;
+}
+
+
+.navbar .info .p4{
+    margin-left: 74rem;
+}
+
+.navbar .nav{
+    display: flex;
+    gap :2.4rem;
+    margin: 0rem 7.4rem;
+}
+
+
+.navbar .nav a{
+    color: var(--black);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 2rem 0.2rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.navbar .nav a:hover{
+    border-bottom: .1px solid black;
+}
+
+.navbar .nav img{
+    width: 12rem;
+    height: 4.2rem;
+    box-shadow: var(--shadow);
+    border: .1px outset var(--black);
+}
+
+
+.navbar .nav .fa-user-circle{
+    margin: 2rem;
+    margin-left: 57rem;
+    font-size: 1.9rem;
+    
+}
+
+.navbar .nav i{
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: 1.5px  var(--black);
+}
+
+
+.navbar .nav span{
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+
+.navbar .nav select{
+    border: none;
+    background: none;
+    
+}
+
+.navbar .nav option{
+    box-shadow: var(--shadow);
+    
+}
+
+ .duration{
+    position: fixed;
+    top: -0.1rem;
+    left: 0;
+    background:  var(--black);
+    color: var(--white);
+    margin-top: 8.5rem;
+    height: 2.3rem;
+    width: 101%;
+    display: flex;
+    font-size: 1.3rem;
+    z-index: 4;
+
+}
+
+.duration .day{
+align-self: center;
+margin: 0  0.3rem ;
+}
+
+.indicator{
+   
+    border: .1px solid black;
+    margin: 0.3rem;
+    margin-left: 10.4rem;
+    background: red;
+    border-radius: 100%;
+    width: 1.5rem;
+    animation: pause 2s infinite;
+}
+
+
+@keyframes pause {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2); 
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); 
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        opacity: 1;}
+
+    
+}
+
+
+
+.time{
+    align-self:center;
+    margin: 0 2rem;
+}
+
+
+.body-container{
+    padding: 0 10rem;
+}
+
+.body-container .home img{
+    margin: 0 -12rem;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.body-container .home .image-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -20rem;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+
+.body-container .home .image-text .fas{
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: 1px  var(--white);
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.body-container .home{
+    position: relative;
+}
+ 
+.body-container .home  form{
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+    height: 54rem;
+    padding: 3rem 4rem;
+    background: var(--white);
+    color: var(--black);
+    position:absolute;
+    position:-webkit-sticky;
+    top: 7rem;
+    left: 69rem;
+    z-index: 5;
+    box-shadow: var(--shadow);
+}
+
+
+.body-container .home  form input{
+    padding: 1.5rem 0;
+    border: none;
+    font-size: 1.6rem;
+    border-bottom: .1px solid var(--black);
+
+    }
+
+    
+.body-container .home  form input:focus{
+    border:.1px solid var(--black);
+}
+    
+.body-container .home  form h3{
+    font-size: 2.8rem;
+    margin-top: -1rem ;
+    text-transform: none;
+    font-weight: bolder;
+}
+
+
+.body-container .home  form p{
+    margin: 3rem 0;
+    font-size: 1.2rem;
+}
+
+
+.body-container .home  form p b{
+    border-bottom: .1px solid black;
+    font-weight: bolder;
+}
+
+
+.body-container .home  form button{
+    width: 15rem;
+    border:.1px solid black;
+    padding: 1rem 0.5rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.body-container .home  form button:hover{
+    background: var(--primary);
+    color: var(--white);
+}
+
+
+.body-container .interval{
+    display: flex;
+    flex-direction: column;
+    margin-top: -6rem;
+   
+    
+}
+
+
+.body-container .interval h2{
+    font-size: 3.5rem;
+    width: 30rem;
+}
+
+
+.body-container .interval p{
+    margin-top: -1rem;
+    font-size: 1.5rem;
+    width: 30rem;
+}
+
+
+.body-container .interval .window{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.body-container .interval .window button{
+    width: 30rem;
+    padding: 1.2rem 1rem;
+    border: .1px solid var(--black);
+    border-radius: 2rem;
+    background: transparent;
+}
+
+.body-container .interval .window button:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+
+.body-container .interval .window  .que{
+    font-size: 1.3rem;
+    
+}
+
+.body-container .interval .window i{
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: .7px  var(--black);
+    margin: 0.4rem;
+}
+    
+.body-container  .arrow-container{
+    position: relative;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+      font-family: "Protest Revolution", sans-serif;/* Use a brush font */
+      color: rgb(0, 0, 0);
+      -webkit-text-fill-color: transparent; 
+       -webkit-text-stroke: 2.4px var(--black);  
+      left: 40rem;
+    }
+                                 
+   
+.price {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.price .p1{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    width: 30rem;
+    height: 50rem;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0rem .2rem 0.7rem rgba(0, 0, 0, 0.623);
+}
+
+.price .p1 .ex{
+    font-size: 1.4rem;
+}
+.price .p1 h2{
+    font-size:4.2rem;
+    font-family:"Protest Revolution", "comic sans", cursive;
+    color: rgb(0, 0, 0);
+   -webkit-text-fill-color: transparent; 
+   -webkit-text-stroke: 2px var(--black);  
+    margin: 0;
+}
+
+.price .p1 h6{
+    font-size: 1.2rem;
+    margin:  1.2rem 2rem;
+}
+
+.price .p1 i{
+    position: relative;
+    top: -2.5rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    color: aqua;
+    border-bottom: .1px solid var(--black);
+    
+}
+
+
+.price .p1 p{
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+
+.price .p1 a{
+    position: relative;
+    top: 3rem;
+    left: 10rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+.price .p1 a:hover{
+    color: blue;
+
+}
+
+
+.price #p2{
+    background: var(--primary);
+    border: .5rem solid var(--black);
+}
+
+
+.price #p2 i{
+    color: var(--black);
+}
+
+.body3{
+    background: var(--primary);
+    margin: 10rem -12rem ;
+    padding: 4rem 12rem;
+}
+
+.body3 h3{
+    font-size: 3.2rem;
+    width: 47rem;
+    margin: 0;
+
+}
+
+
+.body3 p{
+    width: 38rem;
+    font-size: 1.5rem;
+    
+}
+
+.body3 ul{
+    margin: 6rem -3rem;
+    font-size: 1.6rem;
+    
+}
+
+.body4{
+    color: var(--white);
+    background: var(--black);
+    margin: -10rem -12rem ;
+    padding: 4rem 12rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.body4 p{
+    font-size: 1.5rem;
+    margin: 4rem 0;
+}
+
+.body4 button{
+    padding: 1rem 4rem;
+    border: .1rem solid var(--white);
+    background: transparent;
+    color: var(--white);
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+
+
+.body4 button:hover{
+    background: var(--primary);
+    color: var(--black);
+}
+
+.body4 span{
+    font-size: 1.5rem;
+}
+
+.body4 .sp{
+    position: absolute;
+    border: 0.7rem dashed var(--white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34rem;
+    height: 32rem;
+    top: -1rem;
+    right: 0.4rem;
+    font-family:"Protest Revolution", "comic sans", cursive;
+    color: rgb(0, 0, 0);
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke: 1px var(--black); 
+}
+
+.body4 .spar{
+    position: relative;
+    font-size: 7rem;
+    transform: rotate(10deg);
+    
+}
+
+.body5{
+    color: var(--black);
+    background: var(--primary);
+    margin: 10rem -12rem ;
+    padding: 4rem 12rem;
+}
+
+.body5 h2{
+    font-size: 3.5rem;
+}
+
+.body5 p{
+    font-size: 1.4rem;
+    margin: 3rem 0;
+}
+
+.body5 button{
+    padding: 1rem 4rem;
+    border: .1rem solid var(--black);
+    background: transparent;
+    color: var(--black);
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+
+
+.body5 button:hover{
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+
+
+.footer{
+    margin: -8rem 0;
+    margin-bottom: 4rem;
+}
+.footer .f1{
+    display: flex;
+    align-items: center;
+   
+}
+
+.footer .f1 img{
+    width: 12rem;
+    height: 4rem;
+    border: 0.01px outset var(--black);
+    box-shadow: var(--shadow);
+}
+
+.footer .f1 h4{
+    font-size: 3rem;
+    margin-left: 65rem;
+}
+.footer .f2 {
+    display: flex;
+    align-items: center;
+    gap: 21rem;
+}
+
+.footer .f2 .f2b{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    cursor: pointer;
+
+
+}
+
+.footer .f2 .f2b i{
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: .7px  var(--black);
+}
+
+
+.footer .f2 .f2b h3:hover{
+    border-bottom: .1px solid black;
+}
+
+
+
+.footer .f2 .f3{
+    font-size: 1.9rem;
+    margin: 0 0rem;
+    cursor: pointer;
+}
+
+
+.footer .f2 .f3 h6:hover{
+    color: blue;
+    border-bottom: .1px solid blue;
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+   html{ font-size: 20%;
+   }
+
+    
+.body-container .home img{
+    margin: 0 -12rem;
+    width: 100vw;
+    height: 23.4vh;
+
+
+}
+
+
+.body-container  .arrow-container{
+    position: relative;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+      font-family: "Protest Revolution", sans-serif;/* Use a brush font */
+      color: rgb(0, 0, 0);
+      -webkit-text-fill-color: transparent; 
+       -webkit-text-stroke: .6px var(--black);  
+      left: 40rem;
+    }
+
+    
+.price .p1 h2{
+    font-size:4.2rem;
+    font-family: "comic sans", cursive;
+    color: rgb(0, 0, 0);
+   -webkit-text-fill-color: transparent; 
+   -webkit-text-stroke: .7px var(--black);  
+    margin: 0;
+}
+
+.body4 .sp{
+    position: absolute;
+    border: 0.7rem dashed var(--white);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34rem;
+    height: 32rem;
+    top: -1rem;
+    right: 0.4rem;
+    font-family:"Protest Revolution", "comic sans", cursive;
+    color: rgb(0, 0, 0);
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke: .1px var(--black); 
+}
+
+}
+
+
+@media (min-width:481px) and (max-width:886px) {
+    html{ font-size: 35%;
+    }
+ 
+     
+ .body-container .home img{
+     margin: 0 -12rem;
+     width: 100vw;
+     height: 34.7vh;
+ 
+ 
+ }
+ 
+ 
+ .body-container  .arrow-container{
+     position: relative;
+     font-size: 2.6rem;
+     text-transform: uppercase;
+       font-family: "Protest Revolution", sans-serif;/* Use a brush font */
+       color: rgb(0, 0, 0);
+       -webkit-text-fill-color: transparent; 
+        -webkit-text-stroke: .6px var(--black);  
+       left: 40rem;
+     }
+ 
+     
+ .price .p1 h2{
+     font-size:4.2rem;
+     font-family: "comic sans", cursive;
+     color: rgb(0, 0, 0);
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: .7px var(--black);  
+     margin: 0;
+ }
+ 
+ .body4 .sp{
+     position: absolute;
+     border: 0.7rem dashed var(--white);
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 34rem;
+     height: 32rem;
+     top: -1rem;
+     right: 0.4rem;
+     font-family:"Protest Revolution", "comic sans", cursive;
+     color: rgb(0, 0, 0);
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke: .1px var(--black); 
+ }
+ 
+ }
+
+
+@media (min-width:1920px) and  (max-width:2400px) {
+    html{
+        font-size: 84%;
+    }
+
+    
+.body-container .home  form{
+    padding: 9rem 7rem;
+    top: 8.5rem;
+}
+    
+
+    
+}
+
+
+@media (min-width:3000px)  {
+    html{
+        font-size: 150%;
+    }
+
+      
+.body-container .home  form{
+    padding: 9.2rem 8rem;
+    top: 7.8rem;
+}
+
+
+    
+}
+
+
+
+
+@media (min-width:3800px)  {
+    html{
+        font-size: 160%;
+    }
+
+      
+.body-container .home  form{
+    padding: 11.3rem 8rem;
+    top: 7.8rem;
+}
+
+select{
+    font-size: 1rem;
+}
+    
+}
+
+
+  
+
+
+@media (min-width:1200px) and (max-width:1280px)
+ and (min-height:720px) and (max-height:740px) {
+
+    html{
+        font-size: 58%;
+    }
+
+    
+.body-container .home img{
+    margin: 0 -12rem;
+    width: 100vw;
+    height: 86.4vh;
+
+
+}
+
+    
+}
+
+
+
+@media (min-width:3180px) and (max-width:3280px)
+ and (min-height:1700px) and (max-height:1840px){
+    
+    html{
+        font-size: 132%;
+    }
+
+    .body-container .home  form{
+        padding: 11.2rem 7rem;
+        top: 9rem;
+    }
+        
+ }
