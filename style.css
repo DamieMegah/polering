@@ -15,11 +15,13 @@
 
 html{
     font-size: 60%;
+     overflow-x: hidden;
     
 }
 
 body{
     color: var(--black);
+     overflow-x: hidden;
 }
 
 
