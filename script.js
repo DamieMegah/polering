@@ -122,12 +122,4 @@ if (window.innerWidth <= 800) {
     }
   }
 
-  window.addEventListener('resize',
-    function(){
-        this.window.location.reload();
-    }
-  );
-
-
-
-  window.addEventListener('resize', updateCSS);
+  
