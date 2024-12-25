@@ -15,13 +15,13 @@
 
 html{
     font-size: 60%;
-     overflow-x: hidden;
-    
+    overflow-x: hidden;
+
 }
 
 body{
     color: var(--black);
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -59,16 +59,20 @@ body{
     margin-left: 74rem;
 }
 
+.fa-bars{
+display: none;
+}
 .navbar .nav{
     display: flex;
     gap :2.4rem;
-    margin: 0rem 7.4rem;
+    margin-left:  24rem;
+    margin-top: -4rem;
 }
 
 
 .navbar .nav a{
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 700;
@@ -79,38 +83,46 @@ body{
 
 
 .navbar .nav a:hover{
-    border-bottom: .1px solid black;
+    border-bottom: .1px solid blue;
+    color: blue;
 }
 
-.navbar .nav img{
+.navbar  img{
     width: 12rem;
     height: 4.2rem;
+    margin-left: 7.5rem;
     box-shadow: var(--shadow);
     border: .1px outset var(--black);
 }
 
 
-.navbar .nav .fa-user-circle{
+.navbar  .fa-user-circle{
     margin: 2rem;
-    margin-left: 57rem;
+    margin-left: 112rem;
+    margin-top: -4rem;
     font-size: 1.9rem;
     
 }
 
-.navbar .nav i{
+.navbar .fa-user-circle{
     -webkit-text-fill-color:transparent;
     -webkit-text-stroke: 1.5px  var(--black);
 }
 
 
-.navbar .nav span{
+.navbar  span{
+    color: var(--black);
     font-size: 1.1rem;
     margin: 1rem;
 }
 
 
-.navbar .nav select{
-    border: none;
+.navbar  select{
+    
+    width: 5rem;
+    margin-left: 122rem;
+    margin-top: -4rem;
+    border: .2px solid var(--black);
     background: none;
     
 }
@@ -155,7 +167,7 @@ margin: 0  0.3rem ;
 @keyframes pause {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        box-shadow: 0 0 10px rgba(44, 40, 40, 0.8);
         opacity: 1;
     }
     50% {
@@ -603,12 +615,40 @@ margin: 0  0.3rem ;
     border-bottom: .1px solid blue;
 }
 
+.image-text, .home form, .interval, .arrow-container, .price, h3, p, ul {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.image-text.visible, .home form.visible, .interval.visible, .arrow-container.visible, .price.visible, h3.visible, p.visible, ul.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media (min-width:320px) and (max-width:480px) {
-   html{ font-size: 20%;
+   html{ font-size: 70%;
+
    }
 
-    
+
+   
+.navbar{
+    height: 7rem;
+    padding: 0.4rem;
+}  
+
+
+.navbar .info{
+    display: flex;
+    flex-direction:column;
+    gap: 0rem;
+    margin: .2rem 8rem;
+    font-size: 0.8rem;
+}
+
+
+
 .body-container .home img{
     margin: 0 -12rem;
     width: 100vw;

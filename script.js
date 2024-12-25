@@ -53,4 +53,81 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update UI initially and every minute
     updateUI();
     setInterval(updateUI, 60000); // Check every minute
+
+    const menuIcon = document.querySelector('.fa-bars');
+    const nav = document.querySelector('.nav');
+
+    menuIcon.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+
+    window.onscroll = function() {
+        nav.classList.remove('active');
+    };
+
+    
+window.addEventListener('click', (event) => {
+    if ( !menuIcon.contains(event.target)) {
+      nav.classList.remove('active');
+      opacity2();
+
+      
+    }
+  });
+  
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to add the 'visible' class to elements in the viewport
+    function handleScroll() {
+        const elements = document.querySelectorAll('.image-text, .home form, .interval, .arrow-container, .price, h3, p, ul');
+        elements.forEach(element => {
+            if (isInViewport(element)) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check
+    handleScroll();
 });
+
+
+
+const link = document.getElementById('stylesheet');
+
+if (window.innerWidth <= 800) {
+    link.href = 'mobile.css';
+  } else {
+    link.href = 'style.css';
+  };
+
+  
+  function updateCSS() {
+    if (link.getAttribute('href') === 'style.css' && window.innerWidth <= 800) {
+      link.href = 'mobile.css';
+    } else {
+      link.href ='style.css'
+    }
+  }
+
+  window.addEventListener('resize',
+    function(){
+        this.window.location.reload();
+    }
+  );
+
+
+
+  window.addEventListener('resize', updateCSS);
