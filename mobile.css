@@ -455,7 +455,7 @@ body {
 }
 
 
-.p1, h3, ul, p {
+.p1.visible, h3.visible, ul.visible, p.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -463,7 +463,22 @@ body {
 .body3 {
     background-color: var(--black);
     color: var(--white); 
+html {
+    font-size: 132%;
 }
+
+.body-container .home form {
+    padding: 11.2rem 7rem;
+    top: 9rem;
+}
+
+.body2, .body3, .body4, .body5 {
+    display: block; /* Ensure the elements are displayed */
+    padding: 2rem; /* Add padding for spacing */
+    margin: 1rem 0; /* Add margin for spacing */
+    background-color: #f9f9f9; /* Add a background color for visibility */
+    border: 1px solid #ddd; /* Add a border for visibility */
+}}
 
 .body3 h3,.body3 p, .body3 ul{
     color: var(--white);
@@ -559,6 +574,12 @@ body {
    
 }
 
+
+
+.footer .f2 .f2b h3{
+    opacity: 1;
+}
+
 .footer .f3{
     display:none;
     }
@@ -583,7 +604,7 @@ body {
 }
 
 .copy{
-   align-self:center;
-    justify-self:center;
-    font-size:1.2rem;
+    padding: 2rem 8rem;
+    font-size:.8rem;
+    text-transform: uppercase;
 }

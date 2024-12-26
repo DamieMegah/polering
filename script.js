@@ -88,7 +88,7 @@ window.addEventListener('click', (event) => {
 
     // Function to add the 'visible' class to elements in the viewport
     function handleScroll() {
-        const elements = document.querySelectorAll('.image-text, .home form, .interval, .p1, .arrow-container, .price, h3, p, ul');
+        const elements = document.querySelectorAll('.image-text, .home form, .interval, .arrow-container, .price, .body3, .body4, .body5,.p1, ul, p');
         elements.forEach(element => {
             if (isInViewport(element)) {
                 element.classList.add('visible');
@@ -122,4 +122,6 @@ if (window.innerWidth <= 800) {
     }
   }
 
-  
+
+
+  window.addEventListener('resize', updateCSS);

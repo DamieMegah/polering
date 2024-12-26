@@ -1,5 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/magic-brush');
 
+@import url('http://fonts.cdnfonts.com/css/magic-brush');
+
 :root{
     --primary:rgba(147, 214, 211, 0.767);
     --white:#fff;
@@ -591,6 +593,8 @@ margin: 0  0.3rem ;
 
 }
 
+
+
 .footer .f2 .f2b i{
     -webkit-text-fill-color:transparent;
     -webkit-text-stroke: .7px  var(--black);
@@ -615,89 +619,26 @@ margin: 0  0.3rem ;
     border-bottom: .1px solid blue;
 }
 
-.image-text, .home form, .interval, .arrow-container, .price, h3, p, ul {
+.copy{
+    padding: 5rem 51rem;
+}
+
+
+.image-text, .home form, .interval,  .price, .body4, p, ul {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.image-text.visible, .home form.visible, .interval.visible, .arrow-container.visible, .price.visible, h3.visible, p.visible, ul.visible {
+.image-text.visible, .home form.visible, .interval.visible,  .price.visible, .body4, p.visible, ul.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-@media (min-width:320px) and (max-width:480px) {
-   html{ font-size: 70%;
 
-   }
-
-
-   
-.navbar{
-    height: 7rem;
-    padding: 0.4rem;
-}  
-
-
-.navbar .info{
-    display: flex;
-    flex-direction:column;
-    gap: 0rem;
-    margin: .2rem 8rem;
-    font-size: 0.8rem;
+.footer .f2 .f2b h3{
+    opacity: 1;
 }
-
-
-
-.body-container .home img{
-    margin: 0 -12rem;
-    width: 100vw;
-    height: 23.4vh;
-
-
-}
-
-
-.body-container  .arrow-container{
-    position: relative;
-    font-size: 2.6rem;
-    text-transform: uppercase;
-      font-family: "Protest Revolution", sans-serif;/* Use a brush font */
-      color: rgb(0, 0, 0);
-      -webkit-text-fill-color: transparent; 
-       -webkit-text-stroke: .6px var(--black);  
-      left: 40rem;
-    }
-
-    
-.price .p1 h2{
-    font-size:4.2rem;
-    font-family: "comic sans", cursive;
-    color: rgb(0, 0, 0);
-   -webkit-text-fill-color: transparent; 
-   -webkit-text-stroke: .7px var(--black);  
-    margin: 0;
-}
-
-.body4 .sp{
-    position: absolute;
-    border: 0.7rem dashed var(--white);
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34rem;
-    height: 32rem;
-    top: -1rem;
-    right: 0.4rem;
-    font-family:"Protest Revolution", "comic sans", cursive;
-    color: rgb(0, 0, 0);
-   -webkit-text-fill-color: white; 
-   -webkit-text-stroke: .1px var(--black); 
-}
-
-}
-
 
 @media (min-width:481px) and (max-width:886px) {
     html{ font-size: 35%;
