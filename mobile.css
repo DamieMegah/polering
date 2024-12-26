@@ -580,6 +580,5 @@ h3, ul, p {
 }
 
 .copy{
-    align-self: center;
-    justify-self:center;
+    margin: 2rem 50%;
 }
