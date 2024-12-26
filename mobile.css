@@ -30,6 +30,7 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: var(--background);
     text-transform: capitalize;
+    display:flex;
 }
 
 .navbar{
@@ -582,6 +583,7 @@ body {
 }
 
 .copy{
-    margin: 2rem 50%;
-    font-size 1.2rem;
+   align-self:center;
+    justify-self:center;
+    font-size:1.2rem;
 }
