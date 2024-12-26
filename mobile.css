@@ -389,6 +389,8 @@ body {
     border-radius: 0.9rem;
     line-height: 1.5;
     text-transform: none;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -445,14 +447,14 @@ body {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-h3, ul, p{
+.p1,h3, ul, p{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 
-h3, ul, p {
+.p1, h3, ul, p {
     opacity: 1;
     transform: translateY(0);
 }
@@ -581,4 +583,5 @@ h3, ul, p {
 
 .copy{
     margin: 2rem 50%;
+    font-size 1.2rem;
 }
