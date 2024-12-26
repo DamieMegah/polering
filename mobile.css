@@ -552,11 +552,13 @@ h3, ul, p {
     padding: 1rem;
     background-color: var(--white);
     box-shadow: var(--shadow);
-    display:none;
+    
    
 }
 
-
+.footer h3{
+    display:none;
+    }
 .footer i{
     -webkit-text-stroke:.3px var(--black);
     -webkit-text-fill-color: transparent;
@@ -575,4 +577,9 @@ h3, ul, p {
 .footer h4:hover, .footer h3:hover, .footer h6:hover{
     border-bottom: .1px solid var(--highlight);
     color: var(--highlight);
+}
+
+.copy{
+    align-self: center;
+    justify-self:center;
 }
