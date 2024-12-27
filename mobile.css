@@ -250,18 +250,12 @@ body {
     color: var(--primary);
     margin: 1rem;
     top: 38rem;
-    opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .home .image-text h5, .home .image-text span {
     color: var(--background);
-}
-
-.home .image-text.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 
@@ -277,7 +271,7 @@ body {
     border: .1px ridge var(--black);
     background-color: var(--white);
     box-shadow: var(--shadow);
-    opacity: 0;
+
     transform: translateY(20px);
     display:none;
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -308,14 +302,6 @@ body {
     padding: 1rem;
     background-color: var(--white);
     box-shadow: var(--shadow);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.interval.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .interval h2, .interval p {
@@ -344,18 +330,12 @@ body {
     margin-left: 8rem;
     padding: 2rem 0;
     text-wrap: nowrap;
-    opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.arrow-container.visible {
-    opacity: 1;
-    transform: translateY(0);
 
 
-
-}
 
 .arrow-container h4 {
     color: var(--text-color);
@@ -369,14 +349,6 @@ body {
     box-shadow: var(--shadow);
     border-radius: 0.5rem;
     margin-bottom: 4rem;
-    opacity: 0.9;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.price.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .price #p2 {
@@ -451,11 +423,6 @@ body {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.p1,h3, ul, p{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
 
 
 .p1.visible, h3.visible, ul.visible, p.visible {
